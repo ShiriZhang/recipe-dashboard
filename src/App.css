@@ -112,3 +112,195 @@ body {
 .error {
   color: #b91c1c;
 }
+
+/* ── Charts ── */
+.charts-section {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.chart-toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.toggle-btn {
+  padding: 8px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.15s;
+  color: #1f2937;
+}
+
+.toggle-btn:hover {
+  background: #f3f4f6;
+}
+
+.toggle-btn.active {
+  background: #4f46e5;
+  color: white;
+  border-color: #4f46e5;
+}
+
+.chart-title {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.chart-description {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.chart-legend {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* ── Table rows as links ── */
+.table-row-link {
+  cursor: pointer;
+  transition: background 0.15s;
+  padding: 14px 16px;
+  align-items: center;
+  gap: 12px;
+}
+
+.table-row-link:hover {
+  background: #eef2ff !important;
+}
+
+/* ── Detail page ── */
+.back-link {
+  display: inline-block;
+  margin: 16px 0;
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail-image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.detail-title {
+  font-size: 28px;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.diet-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.diet-tag {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.detail-summary {
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.detail-summary a {
+  color: #4f46e5;
+}
+
+.ingredients-list {
+  columns: 2;
+  gap: 16px;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+.detail-sidebar {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 24px;
+}
+
+.sidebar-note {
+  color: #9ca3af;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.nutrition-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nutrition-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.nutrition-name {
+  color: #6b7280;
+}
+
+.nutrition-value {
+  font-weight: 600;
+  color: #1f2937;
+}
